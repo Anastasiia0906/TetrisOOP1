@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Difficulty>0</Difficulty>
+  <GameSpeed>3</GameSpeed>
+  <MusicEnabled>true</MusicEnabled>
+  <SoundEnabled>true</SoundEnabled>
+  <Volume>1</Volume>
+  <IsDarkTheme>true</IsDarkTheme>
+  <LeftKey>Left</LeftKey>
+  <RightKey>Right</RightKey>
+  <RotateKey>Up</RotateKey>
+  <DownKey>Down</DownKey>
+  <DropKey>Space</DropKey>
+</GameSettings>

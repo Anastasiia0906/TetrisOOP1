@@ -1,0 +1,98 @@
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.AssemblyReference.cache
+C:\OOPtetris-main\obj\Debug\net7.0-windows\ControlSettingsWindow.baml
+C:\OOPtetris-main\obj\Debug\net7.0-windows\GameWindow.baml
+C:\OOPtetris-main\obj\Debug\net7.0-windows\SettingsWindow.baml
+C:\OOPtetris-main\obj\Debug\net7.0-windows\ControlSettingsWindow.g.cs
+C:\OOPtetris-main\obj\Debug\net7.0-windows\GameWindow.g.cs
+C:\OOPtetris-main\obj\Debug\net7.0-windows\SettingsWindow.g.cs
+C:\OOPtetris-main\obj\Debug\net7.0-windows\App.g.cs
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1_MarkupCompile.cache
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.g.resources
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.GeneratedMSBuildEditorConfig.editorconfig
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.AssemblyInfoInputs.cache
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.AssemblyInfo.cs
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.CoreCompileInputs.cache
+C:\OOPtetris-main\obj\Debug\net7.0-windows\App.baml
+C:\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.exe
+C:\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.deps.json
+C:\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.runtimeconfig.json
+C:\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.dll
+C:\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.pdb
+C:\OOPtetris-main\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+C:\OOPtetris-main\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+C:\OOPtetris-main\bin\Debug\net7.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.Up2Date
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.dll
+C:\OOPtetris-main\obj\Debug\net7.0-windows\refint\курсова1.dll
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.pdb
+C:\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.genruntimeconfig.cache
+C:\OOPtetris-main\obj\Debug\net7.0-windows\ref\курсова1.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.exe
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.deps.json
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.runtimeconfig.json
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.pdb
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\bin\Debug\net7.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.AssemblyReference.cache
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\ControlSettingsWindow.baml
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\GameWindow.baml
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\SettingsWindow.baml
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\App.baml
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\ControlSettingsWindow.g.cs
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\GameWindow.g.cs
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\SettingsWindow.g.cs
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1_MarkupCompile.cache
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.g.resources
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.AssemblyInfoInputs.cache
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.AssemblyInfo.cs
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.CoreCompileInputs.cache
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.Up2Date
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\refint\курсова1.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.pdb
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.genruntimeconfig.cache
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\ref\курсова1.dll
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\lllll\OneDrive\Документы\OOPtetris-main\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.exe
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\Music\17-high-score – копія.mp3
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.deps.json
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.runtimeconfig.json
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\курсова1.pdb
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.Asio.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.Core.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.Midi.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.Wasapi.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.WinForms.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\bin\Debug\net7.0-windows\NAudio.WinMM.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.AssemblyReference.cache
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\GameWindow.baml
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\SettingsWindow.baml
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\App.baml
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\GameWindow.g.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\SettingsWindow.g.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1_Content.g.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1_MarkupCompile.cache
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.g.resources
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.AssemblyInfoInputs.cache
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.AssemblyInfo.cs
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.CoreCompileInputs.cache
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.csproj.CopyComplete
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\refint\курсова1.dll
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.pdb
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\курсова1.genruntimeconfig.cache
+C:\Users\koste\OneDrive\Desktop\Курсова 2025\OOPtetris-main\obj\Debug\net7.0-windows\ref\курсова1.dll
