@@ -6,25 +6,19 @@ using System.Windows.Shapes;
 
 namespace Tetris
 {
-    /// <summary>
-    /// Представляє тетроміно (фігуру) у грі Тетріс.
-    /// </summary>
+    // Представляє одну фігуру в грі
     public class Tetromino
     {
-        private int[,] shape; // Матриця форми фігури (1 — зайнята клітинка, 0 — пуста)
+        private int[,] shape; // 1 — клітинка зайнята, 0 — пуста
 
-        public int[,] Shape => shape; // Публічний доступ до форми
+        public int[,] Shape => shape; // доступ до форми фігури
+        public Brush Color { get; }   // колір фігури
 
-        public Brush Color { get; }   // Колір фігури
+        public int X { get; set; }    // позиція по горизонталі
+        public int Y { get; set; }    // позиція по вертикалі
 
-        public int X { get; set; }    // Позиція фігури по горизонталі на полі
-        public int Y { get; set; }    // Позиція фігури по вертикалі на полі
+        public int Id { get; }        // тип фігури (0–6)
 
-        public int Id { get; }        // Ідентифікатор типу фігури
-
-        /// <summary>
-        /// Конструктор тетроміно.
-        /// </summary>
         public Tetromino(int[,] shape, Brush color, int id)
         {
             this.shape = shape;
@@ -34,20 +28,16 @@ namespace Tetris
             this.Y = 0;
         }
 
-        /// <summary>
-        /// Ітерація по зайнятих клітинках фігури.
-        /// </summary>
+        // Прохід по всіх зайнятих клітинках фігури
         public static IEnumerable<(int x, int y)> IterateCells(int[,] shape)
         {
             for (int r = 0; r < shape.GetLength(0); r++)
                 for (int c = 0; c < shape.GetLength(1); c++)
                     if (shape[r, c] != 0)
-                        yield return (c, r); // координати (x, y)
+                        yield return (c, r);
         }
 
-        /// <summary>
-        /// Ітерація по клітинках з урахуванням зсуву.
-        /// </summary>
+        // Те ж саме, але зі зсувом
         public static IEnumerable<(int x, int y)> IterateCells(int[,] shape, int offsetX, int offsetY)
         {
             for (int r = 0; r < shape.GetLength(0); r++)
@@ -56,9 +46,7 @@ namespace Tetris
                         yield return (c + offsetX, r + offsetY);
         }
 
-        /// <summary>
-        /// Повертає новий тетроміно, обернутий на 90 градусів.
-        /// </summary>
+        // Повертає нову фігуру, обернену на 90 градусів
         public Tetromino GetRotated()
         {
             int rows = shape.GetLength(0);
@@ -67,7 +55,7 @@ namespace Tetris
 
             for (int r = 0; r < rows; r++)
                 for (int c = 0; c < cols; c++)
-                    rotated[c, rows - 1 - r] = shape[r, c]; // Обертання за годинниковою стрілкою
+                    rotated[c, rows - 1 - r] = shape[r, c];
 
             return new Tetromino(rotated, this.Color, this.Id)
             {
@@ -76,17 +64,13 @@ namespace Tetris
             };
         }
 
-        /// <summary>
-        /// Обертає фігуру inplace.
-        /// </summary>
+        // Обертає фігуру (міняє форму)
         public void Rotate()
         {
             shape = GetRotated().shape;
         }
 
-        /// <summary>
-        /// Клонує поточну фігуру.
-        /// </summary>
+        // Клонує фігуру з усіма параметрами
         public Tetromino Clone()
         {
             int rows = shape.GetLength(0);
@@ -104,9 +88,7 @@ namespace Tetris
             };
         }
 
-        /// <summary>
-        /// Малює фігуру на вказаному Canvas.
-        /// </summary>
+        // Малює фігуру на Canvas
         public void Draw(Canvas canvas, int cellSize)
         {
             foreach (var (x, y) in IterateCells(shape))
@@ -125,14 +107,12 @@ namespace Tetris
             }
         }
 
-        /// <summary>
-        /// Малює "тінь" фігури на Canvas (позицію, де вона приземлиться).
-        /// </summary>
+        // Малює "тінь" фігури — де вона впаде
         public void DrawGhost(Canvas canvas, int cellSize)
         {
             SolidColorBrush ghostBrush = new SolidColorBrush(((SolidColorBrush)Color).Color)
             {
-                Opacity = 0.3 // Прозорість для тіні
+                Opacity = 0.3
             };
 
             foreach (var (x, y) in IterateCells(shape))
