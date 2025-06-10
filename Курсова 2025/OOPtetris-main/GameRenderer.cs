@@ -4,14 +4,10 @@ using System.Windows.Shapes;
 
 namespace Tetris
 {
-    /// <summary>
-    /// Клас для візуалізації ігрового поля Tetris на WPF Canvas.
-    /// Містить методи для відображення сітки, зафіксованих блоків, активної фігури та "тіні" фігури.
-    /// </summary>
+    /// Рендерить ігрове поле на Canvas: сітка, фігури, тінь.
     public static class GameRenderer
     {
-        // Палітра кольорів: кожному ID фігури відповідає свій колір.
-        // Індекс 0 — прозорий (фон), далі йдуть кольори фігур.
+        // Кольори: [0] — фон, далі — фігури
         private static readonly Brush[] _palette =
         {
             Brushes.Transparent, Brushes.Cyan,   Brushes.Blue,
@@ -19,26 +15,19 @@ namespace Tetris
             Brushes.Purple,      Brushes.Red
         };
 
-        /// <summary>
-        /// Основний метод візуалізації гри.
-        /// Малює сітку, фіксовані блоки, активну фігуру та її тінь.
-        /// </summary>
-        /// <param name="canvas">Полотно для малювання</param>
-        /// <param name="board">Об'єкт ігрового поля</param>
-        /// <param name="cellSize">Розмір однієї клітинки в пікселях</param>
+        /// Малює поле, фіксовані блоки, активну фігуру і її тінь.
         public static void Render(Canvas canvas, GameBoard board, int cellSize)
         {
-            // Очистити попередній вміст канвасу
             canvas.Children.Clear();
 
-            // 1) Намалювати сітку
+            // Сітка
             DrawGrid(canvas, board, cellSize);
 
-            // 2) Намалювати всі фіксовані блоки на полі
+            // Зафіксовані блоки
             foreach (var (x, y, id) in board.IterateFixedBlocks())
                 DrawRect(canvas, x, y, cellSize, _palette[id]);
 
-            // 3) Намалювати активну фігуру (ту, що зараз падає)
+            // Поточна фігура
             if (board.ActivePiece != null)
             {
                 foreach (var (cx, cy) in Tetromino.IterateCells(board.ActivePiece.Shape))
@@ -49,7 +38,7 @@ namespace Tetris
                              _palette[board.ActivePiece.Id]);
             }
 
-            // 4) Намалювати тінь активної фігури (позиція, куди вона впаде)
+            // Тінь фігури
             var (ghostX, ghostY) = board.GetGhostPosition();
             if (board.ActivePiece != null)
             {
@@ -58,23 +47,21 @@ namespace Tetris
                              ghostX + cx,
                              ghostY + cy,
                              cellSize,
-                             new SolidColorBrush(Color.FromArgb(40, 0, 0, 0))); // прозорий чорний для тіні
+                             new SolidColorBrush(Color.FromArgb(40, 0, 0, 0))); // прозорий чорний
             }
         }
 
-        /// <summary>
-        /// Малює сітку на полі для візуального розділення клітинок.
-        /// </summary>
+        /// Малює сітку по всьому полю.
         private static void DrawGrid(Canvas canvas, GameBoard board, int cellSize)
         {
-            var gridBrush = Brushes.White;   // колір сітки
-            double opacity = 0.07;           // прозорість сітки
-            double thickness = 0.5;          // товщина ліній
+            var gridBrush = Brushes.White;
+            double opacity = 0.07;
+            double thickness = 0.5;
 
             int width = GameBoard.Cols * cellSize;
             int height = GameBoard.Rows * cellSize;
 
-            // Вертикальні лінії
+            // Вертикальні
             for (int x = 0; x <= GameBoard.Cols; x++)
             {
                 var line = new Line
@@ -90,7 +77,7 @@ namespace Tetris
                 canvas.Children.Add(line);
             }
 
-            // Горизонтальні лінії
+            // Горизонтальні
             for (int y = 0; y <= GameBoard.Rows; y++)
             {
                 var line = new Line
@@ -107,30 +94,20 @@ namespace Tetris
             }
         }
 
-        /// <summary>
-        /// Малює один прямокутник на полі гри.
-        /// </summary>
-        /// <param name="cv">Полотно</param>
-        /// <param name="x">X-координата в клітинках</param>
-        /// <param name="y">Y-координата в клітинках</param>
-        /// <param name="cell">Розмір клітинки</param>
-        /// <param name="fill">Колір фону</param>
-        private static void DrawRect(Canvas cv, int x, int y, int cell, Brush fill)
+          /// Малює одну клітинку.
+             private static void DrawRect(Canvas cv, int x, int y, int cell, Brush fill)
         {
             var r = new Rectangle
             {
                 Width = cell,
                 Height = cell,
                 Fill = fill,
-                Stroke = Brushes.Black,      // рамка клітинки — чорна
+                Stroke = Brushes.Black, // рамка
                 StrokeThickness = 1
             };
 
-            // Позиціонування на канвасі
             Canvas.SetLeft(r, x * cell);
             Canvas.SetTop(r, y * cell);
-
-            // Додати до канвасу
             cv.Children.Add(r);
         }
     }
