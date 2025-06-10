@@ -5,40 +5,50 @@ using System.Xml.Serialization;
 
 namespace Tetris
 {
-    /// <summary>Налаштування гри: швидкість, тема, музика, звук і гарячі клавіші.</summary>
+    // Клас зберігає налаштування гри: складність, швидкість, звук, тему та керування
     public class GameSettings
     {
-        private const string SettingsFile = "settings.xml";
+        private const string SettingsFile = "settings.xml"; // Назва файлу для збереження налаштувань
 
-        // Загальні параметри
+        // Рівень складності гри (1 — легкий, 2 — середній, 3 — складний)
         public int Difficulty { get; set; } = 1;
 
+        // Швидкість гри (впливає на інтервал таймера)
         public int GameSpeed { get; set; } = 5;
 
-        public bool MusicEnabled { get; set; } = true;   // Музика увімкнена/вимкнена
-        public bool SoundEnabled { get; set; } = true;   // Звукові ефекти увімкнені/вимкнені
+        // Увімкнення фонової музики
+        public bool MusicEnabled { get; set; } = true;
 
+        // Увімкнення звукових ефектів
+        public bool SoundEnabled { get; set; } = true;
+
+        // Гучність звуку (0–100)
         public int Volume { get; set; } = 70;
 
+        // Темна тема інтерфейсу
         public bool IsDarkTheme { get; set; } = false;
 
-        // Гарячі клавіші (XmlIgnore, щоб не серіалізувати напряму)
+        // Клавіша для руху фігури вліво
         [XmlIgnore]
         public Key LeftKey { get; set; } = Key.Left;
 
+        // Клавіша для руху фігури вправо
         [XmlIgnore]
         public Key RightKey { get; set; } = Key.Right;
 
+        // Клавіша для обертання фігури
         [XmlIgnore]
         public Key RotateKey { get; set; } = Key.Up;
 
+        // Клавіша для прискореного падіння фігури
         [XmlIgnore]
         public Key DownKey { get; set; } = Key.Down;
 
+        // Клавіша для миттєвого скидання фігури
         [XmlIgnore]
         public Key DropKey { get; set; } = Key.Space;
 
-        // Обгортки для серіалізації ключів у вигляді рядків
+        // Нижче — обгортки для серіалізації клавіш у вигляді рядків (XML не підтримує тип Key напряму)
 
         [XmlElement("LeftKey")]
         public string LeftKeyString
@@ -75,7 +85,7 @@ namespace Tetris
             set => DropKey = ParseKey(value, Key.Space);
         }
 
-        /// <summary>Парсить ключ з рядка з безпечною обробкою помилок.</summary>
+        // Перетворює рядок у клавішу Key, з резервним значенням на випадок помилки
         private static Key ParseKey(string? keyString, Key defaultKey)
         {
             if (!string.IsNullOrEmpty(keyString) && Enum.TryParse<Key>(keyString, out var key))
@@ -85,7 +95,7 @@ namespace Tetris
             return defaultKey;
         }
 
-        /// <summary>Завантажує налаштування з XML-файлу або повертає нові за замовчуванням.</summary>
+        // Завантаження налаштувань з XML-файлу. Якщо файл не існує або пошкоджений — повертає налаштування за замовчуванням
         public static GameSettings Load()
         {
             if (File.Exists(SettingsFile))
@@ -98,13 +108,13 @@ namespace Tetris
                 }
                 catch
                 {
-                    // Якщо сталася помилка десеріалізації, повертаємо налаштування за замовчуванням
+                    // Якщо сталася помилка при читанні або десеріалізації, повертаємо стандартні налаштування
                 }
             }
             return new GameSettings();
         }
 
-        /// <summary>Зберігає поточні налаштування у XML-файл.</summary>
+        // Зберігає поточні налаштування у XML-файл
         public void Save()
         {
             try
@@ -115,7 +125,7 @@ namespace Tetris
             }
             catch
             {
-                // Ігноруємо помилки при записі (наприклад, відсутність прав на файл)
+                // Ігноруємо помилки при записі (наприклад, файл зайнятий або немає доступу)
             }
         }
     }
